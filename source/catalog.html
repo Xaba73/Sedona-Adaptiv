@@ -18,8 +18,8 @@
             <li class="main-nav__item">
               <a class="main-nav__link" href="index.html">Главная</a>
             </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--active">Фото и видео</a>
+            <li class="main-nav__item main-nav__item--active">
+              <a class="main-nav__link">Фото и видео</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="Form.html">Форма Отзыва</a>
@@ -47,37 +47,67 @@
       </header>
       <section class="gallery">
         <h2 class="vissually-hidden">Галерея фотографий</h2>
-        <div class="gallery__wrapper">
-          <img class="gallery__photo" src="../source/img/catalog-photo-1.jpg" alt="Фото заката" width="280" height="280">
-          <h3 class="gallery__title">Неродные просторы</h3>
-          <p class="gallery__author">Автор фото: Борис</p>
-          <span class="gallery__like-counter">1350</span>
-        </div>
-        <div class="gallery__wrapper">
-          <img class="gallery__photo" src="../source/img/catalog-photo-2.jpg" alt="Фото местной фауны" width="280" height="280">
-          <h3 class="gallery__title">Местная растительность</h3>
-          <p class="gallery__author">Автор фото: Сергей</p>
-          <span class="gallery__like-counter">143</span>
-        </div>
-        <div class="gallery__wrapper">
-          <img class="gallery__photo" src="../source/img/catalog-photo-3.jpg" alt="Живописная дорога" width="280" height="280">
-          <h3 class="gallery__title">Дорога на север</h3>
-          <p class="gallery__author">Автор фото: Петр</p>
-          <span class="gallery__like-counter">96</span>
-        </div>
-        <div class="gallery__wrapper">
-          <img class="gallery__photo" src="../source/img/catalog-photo-4.jpg" alt="Фото моста дьявола" width="280" height="280">
-          <h3 class="gallery__title">Мост дьявола</h3>
-          <p class="gallery__author">Автор фото: Антон</p>
-          <span class="gallery__like-counter">254</span>
-        </div>
-        <div class="gallery__wrapper conclusion">
-          <h2 class="conclusion__title">Все еще сомневаетесь?</h2>
-          <p class="conclusion__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-          <video class="conclusion__video" width="320" height="201" controls="controls">
+        <ul class="gallery__list">
+          <li class="gallery__item">
+            <figure class="gallery__content">
+              <img class="gallery__photo" src="../source/img/catalog-photo-1.jpg" alt="Фото заката" width="280" height="280">
+              <h3 class="gallery__title">Неродные просторы</h3>
+              <figcaption class="gallery__author">Автор фото: Борис</figcaption>
+            </figure>
+            <span class="gallery__like-counter">1350</span>
+          </li>
+          <li class="gallery__item">
+            <figure class="gallery__content">
+              <img class="gallery__photo" src="../source/img/catalog-photo-2.jpg" alt="Фото местной фауны" width="280" height="280">
+              <h3 class="gallery__title">Местная растительность</h3>
+              <figcaption class="gallery__author">Автор фото: Сергей</figcaption>
+            </figure>
+            <span class="gallery__like-counter">143</span>
+          </li>
+          <li class="gallery__item">
+            <figure class="gallery__content">
+              <img class="gallery__photo" src="../source/img/catalog-photo-3.jpg" alt="Живописная дорога" width="280" height="280">
+              <h3 class="gallery__title">Дорога на север</h3>
+              <figcaption class="gallery__author">Автор фото: Петр</figcaption>
+            </figure>
+            <span class="gallery__like-counter">96</span>
+          </li>
+          <li class="gallery__item">
+            <figure class="gallery__content">
+              <img class="gallery__photo" src="../source/img/catalog-photo-4.jpg" alt="Фото моста дьявола" width="280" height="280">
+              <h3 class="gallery__title">Мост дьявола</h3>
+              <figcaption class="gallery__author">Автор фото: Антон</figcaption>
+            </figure>
+            <span class="gallery__like-counter">254</span>
+          </li>
+        </ul>
+        <section class="video-content">
+          <h2 class="video-content__title">Все еще сомневаетесь?</h2>
+          <p class="video-content__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+          <video class="video-content__media" width="320" height="201">
             <source src="#">
           </video>
-        </div>
+          <div class="video-navigation">
+            <p class="video-navigation__wrapper">
+              <input class="video-navigation__range-bar" type="range" name="range-bar" min="1" max="20">
+            </p>
+            <div class="video-navigation__button-wrapper">
+              <button class="video-navigation__button video-navigation__button--repeat" type="button">
+                <span class="vissually-hidden">Кнопа повтора видео</span>
+              </button>
+            </div>
+            <div class="video-navigation__button-wrapper">
+              <button class="video-navigation__button video-navigation__button--subtitles" type="button">
+                <span class="vissually-hidden">Кнопа включения субтитров</span>
+              </button>
+            </div>
+            <div class="video-navigation__button-wrapper">
+              <button class="video-navigation__button video-navigation__button--full-screen" type="button">
+                <span class="vissually-hidden">Кнопа переключения полноэкранного режима</span>
+              </button>
+            </div>
+          </div>
+        </section>
       </section>
     </main>
     <footer class="page-footer">
