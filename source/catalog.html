@@ -11,7 +11,7 @@
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
-          <span class="vissually-hidden">Открыть меню</span>
+          <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
@@ -30,23 +30,23 @@
           </ul>
         </div>
         <button class="main-nav__button-close">
-          <span class="vissually-hidden">Закрыть меню</span>
-          <svg width="23" height="23" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M22.2 2.8 19.4 0l-8.3 8.3L2.8 0 0 2.8l8.3 8.3L0 19.4l2.8 2.8 8.3-8.3 8.3 8.3 2.8-2.8-8.3-8.3 8.3-8.3Z"/></svg>
+          <span class="visually-hidden">Закрыть меню</span>
+          <img src="../source/img/nav-cross.svg" width="23" height="23" alt="Иконка закрытия меню">
         </button>
       </nav>
     </header>
     <main class="page-main">
-      <div class="page-main__logo-wrapper">
+      <div class="logo">
         <img src="../source/img/form-logo.svg" alt="Логотип седона" width="229" height="39">
       </div>
-      <header class="page-main__header">
-        <div class="page-main__header-wrapper">
-          <h1 class="page-main__header-title">Фото и видео</h1>
-          <p class="page-main__header-description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+      <section class="page-promo">
+        <div class="page-promo__wrapper">
+          <h1 class="page-promo__title">Фото и видео</h1>
+          <p class="page-promo__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
         </div>
-      </header>
+      </section>
       <section class="gallery">
-        <h2 class="vissually-hidden">Галерея фотографий</h2>
+        <h2 class="visually-hidden">Галерея фотографий</h2>
         <ul class="gallery__list">
           <li class="gallery__item">
             <figure class="gallery__content">
@@ -54,7 +54,7 @@
               <h3 class="gallery__title">Неродные просторы</h3>
               <figcaption class="gallery__author">Автор фото: Борис</figcaption>
             </figure>
-            <span class="gallery__like-counter">1350</span>
+            <button class="gallery__like-counter" type="button">1350</button>
           </li>
           <li class="gallery__item">
             <figure class="gallery__content">
@@ -62,7 +62,7 @@
               <h3 class="gallery__title">Местная растительность</h3>
               <figcaption class="gallery__author">Автор фото: Сергей</figcaption>
             </figure>
-            <span class="gallery__like-counter">143</span>
+            <button class="gallery__like-counter" type="button">143</button>
           </li>
           <li class="gallery__item">
             <figure class="gallery__content">
@@ -70,7 +70,7 @@
               <h3 class="gallery__title">Дорога на север</h3>
               <figcaption class="gallery__author">Автор фото: Петр</figcaption>
             </figure>
-            <span class="gallery__like-counter">96</span>
+            <button class="gallery__like-counter" type="button">96</button>
           </li>
           <li class="gallery__item">
             <figure class="gallery__content">
@@ -78,12 +78,17 @@
               <h3 class="gallery__title">Мост дьявола</h3>
               <figcaption class="gallery__author">Автор фото: Антон</figcaption>
             </figure>
-            <span class="gallery__like-counter">254</span>
+            <button class="gallery__like-counter" type="button">254</button>
           </li>
         </ul>
+        <section class="page-promo">
+          <div class="page-promo__wrapper">
+            <h2 class="page-promo__title">Все еще сомневаетесь?</h2>
+            <p class="page-promo__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+          </div>
+        </section>
         <section class="video-content">
-          <h2 class="video-content__title">Все еще сомневаетесь?</h2>
-          <p class="video-content__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+          <h2 class="visually-hidden">Видеоролик о городе</h2>
           <video class="video-content__media" width="320" height="201">
             <source src="#">
           </video>
@@ -93,17 +98,17 @@
             </p>
             <div class="video-navigation__button-wrapper">
               <button class="video-navigation__button video-navigation__button--repeat" type="button">
-                <span class="vissually-hidden">Кнопа повтора видео</span>
+                <span class="visually-hidden">Кнопа повтора видео</span>
               </button>
             </div>
             <div class="video-navigation__button-wrapper">
               <button class="video-navigation__button video-navigation__button--subtitles" type="button">
-                <span class="vissually-hidden">Кнопа включения субтитров</span>
+                <span class="visually-hidden">Кнопа включения субтитров</span>
               </button>
             </div>
             <div class="video-navigation__button-wrapper">
               <button class="video-navigation__button video-navigation__button--full-screen" type="button">
-                <span class="vissually-hidden">Кнопа переключения полноэкранного режима</span>
+                <span class="visually-hidden">Кнопа переключения полноэкранного режима</span>
               </button>
             </div>
           </div>
@@ -119,17 +124,17 @@
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--twitter button" href="#">
-                <span class="vissually-hidden">Твиттер</span>
+                <span class="visually-hidden">Твиттер</span>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--facebook button" href="#">
-                <span class="vissually-hidden">Фейсбук</span>
+                <span class="visually-hidden">Фейсбук</span>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--youtube button" href="#">
-                <span class="vissually-hidden">Ютуб</span>
+                <span class="visually-hidden">Ютуб</span>
               </a>
             </li>
           </ul>
