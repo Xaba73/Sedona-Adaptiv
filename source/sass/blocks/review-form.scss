@@ -1,0 +1,21 @@
+.review-form__item {
+  border: none;
+}
+
+.review-form__title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.field__label {
+  font-size: 14px;
+  line-height: 26px;
+}
+.field__input{
+  background-color: $grey-field;
+  border: none;
+  padding-top: 18px;
+  padding-bottom: 14px;
+  padding-left: 22px;
+}
