@@ -1,0 +1,15 @@
+.feels__field {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  overflow: auto;
+  border: none;
+  resize: none;
+  background-color: $grey-field;
+  padding: 13px 23px 29px 21px;
+
+  &::placeholder {
+    color: black;
+  }
+}
