@@ -53,7 +53,7 @@
       <div class="review-form__wrapper">
         <form action="https://echo.htmlacademy.ru/" method="post">
           <h2 class="visually-hidden">Напишите нам</h2>
-          <fieldset class="review-form__item full-name-form">
+          <fieldset class="review-form__fieldset full-name-form">
             <legend class="review-form__title">Представьтесь:</legend>
             <div class="full-name-form__field-group field">
               <label class="field__label" for="first-name">Имя*:</label>
@@ -68,7 +68,7 @@
               <input class="field__input" id="surname" type="text" name="surname" placeholder="Александрович">
             </div>
           </fieldset>
-          <fieldset class="review-form__item contacts">
+          <fieldset class="review-form__fieldset contacts">
             <legend class="review-form__title">Контактная информация:</legend>
             <div class="contacts__field-group field">
               <label class="field__label" for="phone-number">Контактный телефон*:</label>
@@ -80,65 +80,51 @@
               <input class="field__input" id="email" type="email" name="email" placeholder="Введите e-mail" required>
             </div>
           </fieldset>
-          <fieldset class="review-form__item impression">
+          <fieldset class="review-form__fieldset impression">
             <legend class="review-form__title">Ваше общее впечатление:</legend>
-            <ul class="impression__list">
-              <li class="impression__item">
-                <label class="impression__control">
-                  <input class="visually-hidden review-form__radio" type="radio" name="impression-group"
-                    value="positive" checked>
-                  <span class="impression__label">Скорее положительное</span>
-                </label>
+            <ul class="review-form__list">
+              <li class="review-form__item">
+                <input class="visually-hidden review-form__radio" id="positive" type="radio" name="impression-group"
+                  value="positive" checked>
+                <label class="review-form__label" for="positive">Скорее положительное</label>
               </li>
-              <li class="impression__item">
-                <label class="impression__control">
-                  <input class="visually-hidden review-form__radio" type="radio" name="impression-group"
-                    value="negative">
-                  <span class="impression__label">Скорее отрицательное</span>
-                </label>
+              <li class="review-form__item">
+                <input class="visually-hidden review-form__radio" id="negative" type="radio" name="impression-group"
+                  value="negative">
+                <label class="review-form__label" for="negative">Скорее отрицательное</label>
               </li>
-              <li class="impression__item">
-                <label class="impression__control">
-                  <input class="visually-hidden review-form__radio" type="radio" name="impression-group"
-                    value="hard-question">
-                  <span class="impression__label">Затрудняюсь ответить</span>
-                </label>
+              <li class="review-form__item">
+                <input class="visually-hidden review-form__radio" type="radio" id="difficult" name="impression-group"
+                  value="difficult">
+                <label class="review-form__label" for="difficult">Затрудняюсь ответить</label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="review-form__item attraction">
+          <fieldset class="review-form__fieldset attraction">
             <legend class="review-form__title">Посещенные достопримечательности:</legend>
-            <ul class="attraction__list">
-              <li class="attraction__item">
-                <label class="attraction__control">
-                  <input class="visually-hidden review-form__checkbox" type="checkbox" name="Devil-bridge" checked>
-                  <span class="attraction__label">Мост Дьявола</span>
-                </label>
+            <ul class="review-form__list">
+              <li class="review-form__item">
+                <input class="visually-hidden review-form__checkbox" id="Devil-bridge" type="checkbox" name="Devil-bridge" checked>
+                <label class="review-form__label" for="Devil-bridge">Мост Дьявола</label>
               </li>
-              <li class="attraction__item">
-                <label class="attraction__control">
-                  <input class="visually-hidden review-form__checkbox" type="checkbox" name="Mount-Bell" checked>
-                  <span class="attraction__label">Гора-Колокол</span>
-                </label>
+              <li class="review-form__item">
+                <input class="visually-hidden review-form__checkbox" id="Mount-Bell" type="checkbox" name="Mount-Bell" checked>
+                <label class="review-form__label" for="Mount-Bell">Гора-Колокол</label>
               </li>
-              <li class="attraction__item">
-                <label class="attraction__control">
-                  <input class="visually-hidden review-form__checkbox" type="checkbox" name="Slide-park" checked>
-                  <span class="attraction__label">Слайд-парк</span>
-                </label>
+              <li class="review-form__item">
+                <input class="visually-hidden review-form__checkbox" id="Slide-park" type="checkbox" name="Slide-park" checked>
+                <label class="review-form__label" for="Slide-park">Слайд-парк</label>
               </li>
-              <li class="attraction__item">
-                <label class="attraction__control">
-                  <input class="attraction__field visually-hidden" type="checkbox" name="Red-rocks">
-                  <span class="attraction__label">Красные скалы</span>
-                </label>
+              <li class="review-form__item">
+                  <input class=" visually-hidden review-form__checkbox" id="Red-rocks" type="checkbox" name="Red-rocks">
+                  <label class="review-form__label" for="Red-rocks">Красные скалы</label>
               </li>
             </ul>
           </fieldset>
           <div class="feels">
             <label class="review-form__title" for="description-feedback">Опишите свои эмоции:</label>
             <p class="feels__field-wrapper">
-              <textarea class="feels__field" id="description-feedback" rows="5"
+              <textarea class="feels__field" id="description-feedback" rows="5" cols="25"
                 placeholder="Опишите подробно все свои восторги" name="feels-rewiev"></textarea>
             </p>
           </div>
