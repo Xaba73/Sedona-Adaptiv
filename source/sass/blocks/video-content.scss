@@ -1,0 +1,19 @@
+.video-navigation__button {
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 20px;
+  border: none;
+
+  &--replay {
+    background-image: url(../../img/replay-button.svg);
+  }
+
+  &--subtitles {
+    background-image: url(../../img/subtitles-button.svg);
+  }
+
+  &--full-screen {
+    background-image: url(../../img/fullscreen-button.svg);
+  }
+}
