@@ -1,5 +1,5 @@
 .features {
-  background-color: white;
+  background-color: $white;
 }
 
 .features__list {
@@ -39,7 +39,7 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
-  color: black;
+  color: $black;
 }
 
 .features__description {
