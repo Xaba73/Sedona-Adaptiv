@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sedona</title>
   <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
@@ -42,7 +43,7 @@
     <main class="page-main">
       <h1 class="visually-hidden">Седона сайт для туристов</h1>
       <div class="logo">
-        <img src="img/main-logo.svg"  class="logo__img" width="282" height="214" alt="Добро пожаловать в Седону">
+        <img src="img/main-logo.svg" class="logo__img" width="282" height="214" alt="Добро пожаловать в Седону">
       </div>
       <section class="page-promo">
         <div class="page-promo__wrapper">
@@ -53,10 +54,13 @@
       <section class="advantages">
         <section class="main-advantages">
           <div class="main-advantages__wrapper">
-            <h3 class="main-advantages__title">Настоящий городок</h3>
-            <p class="main-advantages__number">— №1 —</p>
-            <p class="main-advantages__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
-            <img src="img/main-photo-city.jpg" width="320" height="260" alt="Городской вид Седоны">
+            <div class="main-advantages__container-grid">
+              <h3 class="main-advantages__title">Настоящий городок</h3>
+              <p class="main-advantages__number">— №1 —</p>
+              <p class="main-advantages__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+            </div>
+            <img src="img/main-photo-city.jpg" class="main-advantages__photo" width="320" height="260"
+              alt="Городской вид Седоны">
           </div>
           <div class="features">
             <h4 class="visually-hidden">Преимущества городка</h4>
@@ -77,10 +81,15 @@
           </div>
         </section>
         <section class="main-advantages">
-          <h3 class="main-advantages__title">там есть Мост дьявола</h3>
-          <p class="main-advantages__number">— №2 —</p>
-          <p class="main-advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-          <img src="img/main-photo-bridge.jpg" width="320" height="260" alt="Мост дьявола">
+          <div class="main-advantages__wrapper">
+            <div class="main-advantages__container-grid main-advantages__container-grid--reverse">
+              <h3 class="main-advantages__title">там есть Мост дьявола</h3>
+              <p class="main-advantages__number">— №2 —</p>
+              <p class="main-advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            </div>
+            <img src="img/main-photo-bridge.jpg" class="main-advantages__photo main-advantages__photo--reverse"
+              width="320" height="260" alt="Мост дьявола">
+          </div>
         </section>
         <ol class="advantages__list">
           <li class="advantages__item">
