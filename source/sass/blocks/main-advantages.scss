@@ -1,10 +1,13 @@
 .main-advantages {
   background-color: $blue;
   color: $white;
+}
+
+.main-advantages__wrapper {
   @media (min-width:$tablet-width) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-
+    grid-auto-flow: row dense;
   }
 }
 
@@ -22,4 +25,22 @@
 .main-advantages__description {
   font-size: 14px;
   line-height: 21px;
+}
+
+.main-advantages__photo {
+  @media (min-width:$tablet-width) {
+    grid-column: 2/4;
+  }
+}
+
+.main-advantages__photo--reverse {
+  @media (min-width:$tablet-width) {
+    grid-column: 1/3;
+  }
+}
+
+.main-advantages__container-grid--reverse {
+  @media (min-width:$tablet-width) {
+    grid-column: 3/4;
+  }
 }
