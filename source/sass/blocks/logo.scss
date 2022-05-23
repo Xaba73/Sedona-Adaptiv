@@ -1,7 +1,13 @@
-.logo{
+.logo {
   background-image: url('../../img/main-background.jpg');
   background-repeat: no-repeat;
   background-position: center;
   width: 901px;
   height: 389px;
+}
+
+.logo__img {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
 }

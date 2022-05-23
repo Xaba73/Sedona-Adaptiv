@@ -25,7 +25,7 @@
   font-weight: bold;
 
   &::placeholder {
-    color: black;
+    color: $black;
   }
 }
 
@@ -74,7 +74,7 @@
   position: absolute;
   width: 18px;
   height: 18px;
-  background-color: black;
+  background-color: $black;
   border-radius: 50%;
   cursor: pointer;
   top: 0px;

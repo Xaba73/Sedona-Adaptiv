@@ -1,6 +1,11 @@
 .main-advantages {
   background-color: $blue;
-  color: white;
+  color: $white;
+  @media (min-width:$tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+  }
 }
 
 .main-advantages__title {
