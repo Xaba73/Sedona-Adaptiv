@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sedona</title>
   <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
@@ -51,7 +52,7 @@
     </section>
     <section class="review-form">
       <div class="review-form__wrapper">
-        <form action="https://echo.htmlacademy.ru/" method="post">
+        <form class="review-form__grid-cotainer action="https://echo.htmlacademy.ru/" method="post">
           <h2 class="visually-hidden">Напишите нам</h2>
           <fieldset class="review-form__fieldset full-name-form">
             <legend class="review-form__title">Представьтесь:</legend>
@@ -71,7 +72,7 @@
           <fieldset class="review-form__fieldset contacts">
             <legend class="review-form__title">Контактная информация:</legend>
             <div class="contacts__field-group field">
-              <label class="field__label" for="phone-number">Контактный телефон*:</label>
+              <label class="field__label" for="phone-number"><span class="hide hide--desktop"> Контактный</span> телефон*:</label>
               <input class="field__input" id="phone-number" type="text" name="phone-number"
                 placeholder="Введите телефон" required>
             </div>
@@ -130,6 +131,9 @@
           </div>
           <div class="review-form__button-wrapper">
             <button class="review-form__button button" type="submit">Отправить отзыв</button>
+          </div>
+          <div class="review-form__require">
+            <p class="review-form__require-description">* — обязательные поля</p>
           </div>
         </form>
       </div>
