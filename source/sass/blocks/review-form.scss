@@ -1,3 +1,11 @@
+.review-form__grid-cotainer {
+  @media (min-width:$tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr auto auto auto auto;
+  }
+}
+
 .review-form__fieldset {
   border: none;
 }
@@ -6,27 +14,6 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
-}
-
-.field__label {
-  font-size: 14px;
-  line-height: 26px;
-}
-
-.field__input {
-  background-color: $grey-field;
-  border: none;
-  padding-top: 18px;
-  padding-bottom: 14px;
-  padding-left: 22px;
-  margin-bottom: 20px;
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: bold;
-
-  &::placeholder {
-    color: $black;
-  }
 }
 
 .review-form__list {
@@ -92,4 +79,15 @@
   cursor: pointer;
   top: 0px;
   left: 39px;
+}
+
+.review-form__require-description {
+  font-size: 14px;
+  line-height: 26px;
+  display: none;
+
+  @media (min-width:$tablet-width) {
+    display: block;
+  }
+
 }

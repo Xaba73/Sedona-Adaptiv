@@ -2,6 +2,21 @@
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width:$tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width:$desktop-width) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.gallery__item:first-child {
+  @media (min-width:$tablet-width) {
+    grid-column: 1 / -1;
+  }
 }
 
 .gallery__title {
