@@ -1,13 +1,17 @@
 .logo {
-  background-image: url('../../img/main-background.jpg');
+  background-image: url("../../img/intro-triangle.svg"), url('../../img/background-main.jpg');
   background-repeat: no-repeat;
-  background-position: center;
-  width: 901px;
+  background-position-x: 50%;
+  background-position-y: 100%;
+  background-size: 1200px 57px, cover;
+  min-width: 320px;
   height: 389px;
+  margin-top: -28px;
 }
 
 .logo__img {
   display: block;
   margin-right: auto;
   margin-left: auto;
+  padding-top: 62px;
 }

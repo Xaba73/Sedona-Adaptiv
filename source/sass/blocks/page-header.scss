@@ -5,6 +5,10 @@
 
 .page-header__logo {
   height: 84px;
-  position: absolute;
+  position: relative;
   left: calc(50% - 51px);
+
+  @media (min-width:$tablet-width) {
+    position: absolute;
+  }
 }
