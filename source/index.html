@@ -11,10 +11,7 @@
 <body class="page__body">
   <div class="page__boody-wrapper">
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип Sedona">
-      </a>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -34,11 +31,10 @@
             </li>
           </ul>
         </div>
-        <button class="main-nav__button-close">
-          <span class="visually-hidden">Закрыть меню</span>
-          <img src="img/nav-cross.svg" width="23" height="23" alt="Иконка закрытия меню">
-        </button>
       </nav>
+      <a class="page-header__logo" href="index.html">
+        <img src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип Sedona">
+      </a>
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Седона сайт для туристов</h1>
@@ -157,6 +153,8 @@
       </div>
     </footer>
   </div>
+  <script src="js/main-nav__toggle.js"></script>
+
 </body>
 
 </html>
