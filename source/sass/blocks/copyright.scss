@@ -1,9 +1,15 @@
-.copyright-description {
+.copyright {
+  padding-top: 44px;
+  margin-bottom: 27px;
+}
+
+.copyright__description {
   font-size: 14px;
   line-height: 26px;
-  display: inline;
+  display: inline-block;
 }
 
 .copyright__link {
-  display: inline;
+  display: inline-block;
+  vertical-align: middle;
 }

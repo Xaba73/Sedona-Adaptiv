@@ -19,26 +19,33 @@
   padding-left: 69px;
   position: relative;
 
+  &:first-child {
+    padding-top: 35px;
+  }
+
   &::before {
     content: "";
     position: absolute;
     width: 40px;
     height: 38px;
-    left: 18px;
+    left: 20px;
     background-repeat: no-repeat;
     background-position: center center;
   }
 
   &--house::before {
     background-image: url(../../img/icon-house.svg);
+    top: 26px;
   }
 
   &--souvenir::before {
     background-image: url(../../img/icon-souvenir.svg);
+    top: -13px;
   }
 
   &--food::before {
     background-image: url(../../img/icon-food.svg);
+    top: -7px;
   }
 }
 
@@ -47,6 +54,7 @@
   font-size: 18px;
   line-height: 26px;
   color: $black;
+  margin: 0;
 }
 
 .features__description {

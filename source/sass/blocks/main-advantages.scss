@@ -4,6 +4,15 @@
 }
 
 .main-advantages__wrapper {
+  @media (max-width:$mobile-only-width) {
+    &--decoration {
+      background-image: url(../../img/main-advantage_decor.svg);
+      background-repeat: no-repeat;
+      background-position-x: center;
+      background-position-y: 0%;
+    }
+  }
+
   @media (min-width:$tablet-width) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -12,19 +21,29 @@
 }
 
 .main-advantages__title {
+  padding-top: 39px;
+  text-align: center;
   font-size: 18px;
   font-weight: bold;
   line-height: 26px;
+
+  &--decoration {
+    padding-top: 55px;
+  }
 }
 
 .main-advantages__number {
   font-size: 14px;
   line-height: 21px;
+  text-align: center;
+  margin-top: 21px;
 }
 
 .main-advantages__description {
+  margin-top: 25px;
   font-size: 14px;
   line-height: 21px;
+  text-align: center;
 }
 
 .main-advantages__photo {

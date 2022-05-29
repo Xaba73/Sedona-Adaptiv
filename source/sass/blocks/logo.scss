@@ -7,11 +7,22 @@
   min-width: 320px;
   height: 389px;
   margin-top: -28px;
+
+  @media (min-width:$tablet-width) {
+    height: 518px;
+  }
 }
 
 .logo__img {
   display: block;
   margin-right: auto;
   margin-left: auto;
-  padding-top: 62px;
+  padding-top: 90px;
+
+  @media (min-width:$tablet-width) {
+    width: 461px;
+    height: 350px;
+    padding-top: 77px;
+
+  }
 }

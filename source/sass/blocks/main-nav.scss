@@ -13,7 +13,7 @@
 
   @media (min-width:$tablet-width) {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
   }
 }
@@ -27,14 +27,44 @@
   padding-top: 10px;
   padding-bottom: 5px;
 
+  &:disabled {
+    background-color: $grey-disabled;
+  }
+
   @media (max-width:$mobile-only-width) {
     box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2), inset 0px 1px 0px rgba(255, 255, 255, 0.2);
     border-bottom: 1px solid $blue-border;
+
+    &:hover {
+      background-color: $blue-hover;
+    }
+
+    &:active {
+      background-color: $blue-active;
+      opacity: 0.3;
+    }
   }
 
   @media (min-width:$tablet-width) {
+    font-size: 14px;
+    line-height: 26px;
+
     &:nth-child(4n-2) {
-      margin-right: 20%;
+      margin-right: 30%;
+    }
+  }
+}
+
+@media (min-width:$tablet-width) {
+  .main-nav__item--active .main-nav__link {
+    color: $brown-active;
+
+    &:hover {
+      color: $brown-hover;
+    }
+
+    &:active {
+      opacity: 0.3;
     }
   }
 }
@@ -46,6 +76,16 @@
   @media (min-width:$tablet-width) {
     color: $black;
     width: 20%;
+    padding-top: 16px;
+    padding-bottom: 14px;
+
+    &:active {
+      opacity: 0.3;
+    }
+
+    &:hover {
+      color: $blue;
+    }
   }
 }
 
@@ -63,6 +103,10 @@
 
   &:hover {
     opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 
   @media (min-width:$tablet-width) {
