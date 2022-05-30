@@ -9,3 +9,9 @@
     display: none;
   }
 }
+
+.hide--mobile {
+  @media (max-width:$mobile-only-width) {
+    display: none;
+  }
+}

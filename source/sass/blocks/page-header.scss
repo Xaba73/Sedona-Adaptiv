@@ -11,4 +11,15 @@
   @media (min-width:$tablet-width) {
     position: absolute;
   }
+
+  @media (min-width:$desktop-width) {
+    width: 187px;
+    height: 97px;
+    background-image: url(../../img/page-header-logo-decor.svg);
+    background-repeat: no-repeat;
+    background-position-y: 0;
+    background-position-x: calc(50% - 3.5px);
+    padding-left: 80px;
+    left: calc(50% - 131px);
+  }
 }
