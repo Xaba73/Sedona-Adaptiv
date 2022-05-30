@@ -1,9 +1,13 @@
-.page-promo {
-  margin: 33px 29px 27px 30px;
+.page-promo__wrapper {
+  padding: 33px 29px 27px 30px;
+  background-color: $white;
 
   @media (min-width:$tablet-width) {
-    margin-top: 43.5px;
-    margin-bottom: 52.5px;
+    padding: 43.5px 124px 52.5px 124px;
+  }
+
+  @media (min-width:$desktop-width) {
+    padding: 55px 358px 41px 358px;
   }
 }
 
@@ -12,22 +16,24 @@
   font-size: 18px;
   line-height: 26px;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 37px;
 
-  &--footer {
-    font-size: 21px;
-  }
+
 
   @media (min-width:$tablet-width) {
     font-size: 21px;
-    margin-bottom: 43px;
   }
 }
 
 .page-promo__description {
-  margin-top: 40px;
-  margin-bottom: 11px;
   font-size: 14px;
   line-height: 26px;
   color: $black-100;
   text-align: center;
+  margin-bottom: 0;
+
+  @media (min-width:$tablet-width) {
+    margin-bottom: 0;
+  }
 }
