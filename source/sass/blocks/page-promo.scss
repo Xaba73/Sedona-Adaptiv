@@ -9,6 +9,10 @@
   @media (min-width:$desktop-width) {
     padding: 55px 358px 41px 358px;
   }
+  &--form{
+    border-bottom: 1px solid $grey-disabled ;
+    padding-bottom: 16px;
+  }
 }
 
 .page-promo__title {

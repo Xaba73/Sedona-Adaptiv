@@ -1,6 +1,44 @@
 .field__label {
+  display: block;
   font-size: 14px;
   line-height: 26px;
+  margin-right: 16px;
+
+  &--phone {
+    margin-left: 22px;
+    margin-bottom: 8px;
+
+    ::before {
+      content: "";
+      position: absolute;
+      width: 58px;
+      height: 58px;
+      background-color: $grey-form-icon;
+      right: 0;
+      top: 30%;
+      background-image: url("../../img/form-decor-phone.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  &--email {
+    margin-left: 22px;
+    margin-bottom: 8px;
+
+    ::before {
+      content: "";
+      position: absolute;
+      width: 58px;
+      height: 58px;
+      background-color: $grey-form-icon;
+      right: 0;
+      top: 30%;
+      background-image: url("../../img/form-decor-email.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
 }
 
 .field__input {
@@ -13,6 +51,9 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
+  flex-grow: 1;
+  box-sizing: border-box;
+  width: 100%;
 
   &::placeholder {
     color: $black;
