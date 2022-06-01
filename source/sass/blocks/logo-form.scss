@@ -1,4 +1,4 @@
-.logo-form{
+.logo-form {
   background-image: url("../../img/intro-triangle.svg"), url("../../img/form-mobile-background.jpg");
   min-width: 320px;
   height: 158px;
@@ -7,10 +7,23 @@
   background-position-y: 100%;
   margin-top: -28px;
 
+  @media (min-width:$tablet-width) {
+    background-image: url("../../img/intro-triangle.svg"), url('../../img/background-main.jpg');
+    height: 290px;
+    margin-top: 0;
+  }
 }
-.logo-form__image{
+
+.logo-form__image {
   display: block;
   margin-right: auto;
   margin-left: auto;
   padding-top: 52px;
+
+  @media (min-width:$tablet-width) {
+    width: 456px;
+    height: 77px;
+    padding-top: 95px;
+    margin-bottom: 50px;
+  }
 }
