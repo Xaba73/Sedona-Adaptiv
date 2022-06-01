@@ -2,17 +2,25 @@
   padding: 33px 29px 27px 30px;
   background-color: $white;
 
+  &--form {
+    border-bottom: 1px solid $grey-disabled ;
+    padding-bottom: 16px;
+  }
+
   @media (min-width:$tablet-width) {
     padding: 43.5px 124px 52.5px 124px;
+
+    &--form {
+      padding: 65px 167px 61.5px 166px;
+      border-bottom: none;
+    }
   }
 
   @media (min-width:$desktop-width) {
     padding: 55px 358px 41px 358px;
   }
-  &--form{
-    border-bottom: 1px solid $grey-disabled ;
-    padding-bottom: 16px;
-  }
+
+
 }
 
 .page-promo__title {
@@ -27,7 +35,12 @@
 
   @media (min-width:$tablet-width) {
     font-size: 21px;
+
+    &--form {
+      font-size: 30px;
+    }
   }
+
 }
 
 .page-promo__description {

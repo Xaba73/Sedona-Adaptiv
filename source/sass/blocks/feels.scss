@@ -7,6 +7,12 @@
   display: flex;
   margin-right: 6.25%;
   margin-left: 6.25%;
+
+  @media (min-width:$tablet-width) {
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-bottom: 58px;
+  }
 }
 
 .feels__field {
@@ -18,10 +24,23 @@
   border: none;
   resize: none;
   background-color: $grey-field;
-  padding: 13px 23px 29px 21px;
+  padding: 13px 23px 9px 21px;
   flex-grow: 1;
+  box-sizing: border-box;
+  border: 4px solid $grey-field;
 
   &::placeholder {
     color: $black;
+  }
+
+  &:hover {
+    background-color: $grey-disabled;
+    border: 4px solid $grey-disabled;
+  }
+
+  &:focus {
+    border: 4px solid $grey-disabled;
+    background-color: $white;
+    outline: none;
   }
 }

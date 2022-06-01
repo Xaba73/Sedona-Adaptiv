@@ -1,4 +1,16 @@
-.impression{
+.impression {
   grid-column: 1/2;
   grid-row: 1/2;
+
+  @media (min-width:$tablet-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 292px;
+      background-color: $grey-decor-form;
+      right: 50%;
+      top: 573px;
+    }
+  }
 }
