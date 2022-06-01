@@ -10,16 +10,30 @@
   }
 }
 
+.social__item {
+  position: relative;
+}
+
 .social__item:not(:last-child) {
   margin-right: 1vh;
 }
 
+
 .social__link {
   display: block;
+  position: relative;
   padding: 24px 23px;
   background-color: $blue;
   background-repeat: no-repeat;
   background-position: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 48px;
+    height: 46px;
+
+  }
 
   &:active {
     opacity: 0.3;
@@ -35,6 +49,5 @@
 
   &--youtube {
     background-image: url(../../img/icon-youtube.svg);
-    fill: $white;
   }
 }

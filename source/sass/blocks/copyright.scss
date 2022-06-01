@@ -19,7 +19,21 @@
   display: inline-block;
   vertical-align: middle;
 
+  &:hover {
+    fill: $blue;
+  }
+
   @media (min-width:$tablet-width) {
     margin-right: 24.69%;
+  }
+}
+
+.copyright__link svg {
+  &:hover {
+    fill: $blue;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

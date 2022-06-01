@@ -5,8 +5,8 @@
 
 .page-header__logo {
   height: 84px;
+  align-self: center;
   position: relative;
-  left: calc(50% - 51px);
 
   @media (min-width:$tablet-width) {
     position: absolute;
@@ -18,8 +18,7 @@
     background-image: url(../../img/page-header-logo-decor.svg);
     background-repeat: no-repeat;
     background-position-y: 0;
-    background-position-x: calc(50% - 3.5px);
+    background-position-x: 50%;
     padding-left: 80px;
-    left: calc(50% - 131px);
   }
 }
