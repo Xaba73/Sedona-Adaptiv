@@ -1,0 +1,16 @@
+.logo-form{
+  background-image: url("../../img/intro-triangle.svg"), url("../../img/form-mobile-background.jpg");
+  min-width: 320px;
+  height: 158px;
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 100%;
+  margin-top: -28px;
+
+}
+.logo-form__image{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 52px;
+}

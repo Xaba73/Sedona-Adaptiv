@@ -8,12 +8,25 @@
 
 .review-form__fieldset {
   border: none;
+  padding: 0;
+  margin: 0;
+  @media (max-width:$mobile-only-width) {
+    border-bottom: 1px solid $grey-disabled;
+  }
+}
+
+.review-form__container {
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .review-form__title {
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
+  text-align: center;
+  padding-top: 20px;
+  margin-bottom: 20px;
 }
 
 .review-form__list {

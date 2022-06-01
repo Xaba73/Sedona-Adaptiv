@@ -10,41 +10,39 @@
 
 <body class="page__body">
   <header class="page-header">
-    <a class="page-header__logo" href="index.html">
-      <img src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип Sedona">
-    </a>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="index.html">Главная</a>
+          <li class="main-nav__item main-nav__item--active">
+            <a class="main-nav__link">Главная</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="catalog.html">Фото и видео</a>
           </li>
-          <li class="main-nav__item main-nav__item--active">
-            <a class="main-nav__link">Форма Отзыва</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="Form.html">Форма Отзыва</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="https://htmlacademy.ru/">HTML ACADEMY</a>
           </li>
         </ul>
       </div>
-      <button class="main-nav__button-close">
-        <span class="visually-hidden">Закрыть меню</span>
-        <img src="img/nav-cross.svg" width="23" height="23" alt="Иконка закрытия меню">
-      </button>
+    </nav>
+    <a class="page-header__logo" href="index.html">
+      <img src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип Sedona">
+    </a>
+  </header>
     </nav>
   </header>
   <main class="page-main">
-    <div class="page-main__logo-wrapper">
-      <img src="img/form-logo.svg" alt="Логотип седона" width="229" height="39">
+    <div class="logo-form">
+      <img src="img/form-logo.svg" class="logo-form__image" alt="Логотип седона" width="229" height="39">
     </div>
     <section class="page-promo">
-      <div class="page-promo__wrapper">
+      <div class="page-promo__wrapper page-promo__wrapper--form">
         <h1 class="page-promo__title">Оставьте свой отзыв</h1>
         <p class="page-promo__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных
           вами достопримечательностях</p>
@@ -55,30 +53,34 @@
         <form class="review-form__grid-cotainer action="https://echo.htmlacademy.ru/" method="post">
           <h2 class="visually-hidden">Напишите нам</h2>
           <fieldset class="review-form__fieldset full-name-form">
-            <legend class="review-form__title">Представьтесь:</legend>
-            <div class="full-name-form__field-group field">
-              <label class="field__label" for="first-name">Имя*:</label>
-              <input class="field__input" id="first-name" type="text" name="first-name" placeholder="Пётр" required>
-            </div>
-            <div class="full-name-form__field-group field">
-              <label class="field__label" for="second-name">Фамилия*:</label>
-              <input class="field__input" id="second-name" type="text" name="second-name" placeholder="Иванов" required>
-            </div>
-            <div class="full-name-form__field-group field">
-              <label class="field__label" for="surname">Отчество:</label>
-              <input class="field__input" id="surname" type="text" name="surname" placeholder="Александрович">
+            <div class="review-form__container">
+              <legend class="review-form__title">Представьтесь:</legend>
+              <div class="full-name-form__field-group field">
+                <label class="field__label" for="first-name">Имя*:</label>
+                <input class="field__input" id="first-name" type="text" name="first-name" placeholder="Пётр" required>
+              </div>
+              <div class="full-name-form__field-group field">
+                <label class="field__label" for="second-name">Фамилия*:</label>
+                <input class="field__input" id="second-name" type="text" name="second-name" placeholder="Иванов" required>
+              </div>
+              <div class="full-name-form__field-group field">
+                <label class="field__label" for="surname">Отчество:</label>
+                <input class="field__input" id="surname" type="text" name="surname" placeholder="Александрович">
+              </div>
             </div>
           </fieldset>
           <fieldset class="review-form__fieldset contacts">
-            <legend class="review-form__title">Контактная информация:</legend>
-            <div class="contacts__field-group field">
-              <label class="field__label" for="phone-number"><span class="hide hide--desktop"> Контактный</span> телефон*:</label>
-              <input class="field__input" id="phone-number" type="text" name="phone-number"
-                placeholder="Введите телефон" required>
-            </div>
-            <div class="contacts__field-group field">
-              <label class="field__label" for="email">Электронная почта*:</label>
-              <input class="field__input" id="email" type="email" name="email" placeholder="Введите e-mail" required>
+            <div class="review-form__container">
+              <legend class="review-form__title">Контактная информация:</legend>
+              <div class="contacts__field-group field">
+                <label class="field__label field__label--phone" for="phone-number"><span class="hide hide--desktop"> Контактный</span> телефон*:</label>
+                <input class="field__input" id="phone-number" type="text" name="phone-number"
+                  placeholder="Введите телефон" required>
+              </div>
+              <div class="contacts__field-group field">
+                <label class="field__label field__label--email" for="email"><span class="decor-mark"></span>Электронная почта*:</label>
+                <input class="field__input" id="email" type="email" name="email" placeholder="Введите e-mail" required>
+              </div>
             </div>
           </fieldset>
           <fieldset class="review-form__fieldset impression">
@@ -171,6 +173,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/main-nav__toggle.js"></script>
 </body>
 
 </html>
