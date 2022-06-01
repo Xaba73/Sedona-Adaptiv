@@ -3,6 +3,12 @@
   grid-row: 4/5;
 }
 
+.feels__field-wrapper {
+  display: flex;
+  margin-right: 6.25%;
+  margin-left: 6.25%;
+}
+
 .feels__field {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -13,6 +19,7 @@
   resize: none;
   background-color: $grey-field;
   padding: 13px 23px 29px 21px;
+  flex-grow: 1;
 
   &::placeholder {
     color: $black;

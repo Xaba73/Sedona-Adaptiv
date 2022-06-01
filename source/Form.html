@@ -16,13 +16,13 @@
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--active">
-            <a class="main-nav__link">Главная</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="catalog.html">Фото и видео</a>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--active">
             <a class="main-nav__link" href="Form.html">Форма Отзыва</a>
           </li>
           <li class="main-nav__item">
@@ -34,8 +34,6 @@
     <a class="page-header__logo" href="index.html">
       <img src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип Sedona">
     </a>
-  </header>
-    </nav>
   </header>
   <main class="page-main">
     <div class="logo-form">
@@ -50,7 +48,7 @@
     </section>
     <section class="review-form">
       <div class="review-form__wrapper">
-        <form class="review-form__grid-cotainer action="https://echo.htmlacademy.ru/" method="post">
+        <form class="review-form__grid-cotainer" action="https://echo.htmlacademy.ru/" method="post">
           <h2 class="visually-hidden">Напишите нам</h2>
           <fieldset class="review-form__fieldset full-name-form">
             <div class="review-form__container">
@@ -61,7 +59,8 @@
               </div>
               <div class="full-name-form__field-group field">
                 <label class="field__label" for="second-name">Фамилия*:</label>
-                <input class="field__input" id="second-name" type="text" name="second-name" placeholder="Иванов" required>
+                <input class="field__input" id="second-name" type="text" name="second-name" placeholder="Иванов"
+                  required>
               </div>
               <div class="full-name-form__field-group field">
                 <label class="field__label" for="surname">Отчество:</label>
@@ -73,18 +72,19 @@
             <div class="review-form__container">
               <legend class="review-form__title">Контактная информация:</legend>
               <div class="contacts__field-group field">
-                <label class="field__label field__label--phone" for="phone-number"><span class="hide hide--desktop"> Контактный</span> телефон*:</label>
+                <label class="field__label field__label--phone" for="phone-number"><span class="hide hide--desktop">
+                    Контактный</span> телефон*:</label>
                 <input class="field__input" id="phone-number" type="text" name="phone-number"
                   placeholder="Введите телефон" required>
               </div>
               <div class="contacts__field-group field">
-                <label class="field__label field__label--email" for="email"><span class="decor-mark"></span>Электронная почта*:</label>
+                <label class="field__label field__label--email" for="email"> Электронная почта*:</label>
                 <input class="field__input" id="email" type="email" name="email" placeholder="Введите e-mail" required>
               </div>
             </div>
           </fieldset>
           <fieldset class="review-form__fieldset impression">
-            <legend class="review-form__title">Ваше общее впечатление:</legend>
+            <legend class="review-form__title review-form__title--switches">Ваше общее впечатление:</legend>
             <ul class="review-form__list">
               <li class="review-form__item">
                 <input class="visually-hidden review-form__radio" id="positive" type="radio" name="impression-group"
@@ -104,23 +104,26 @@
             </ul>
           </fieldset>
           <fieldset class="review-form__fieldset attraction">
-            <legend class="review-form__title">Посещенные достопримечательности:</legend>
+            <legend class="review-form__title review-form__title--switches">Посещенные достопримечательности:</legend>
             <ul class="review-form__list">
               <li class="review-form__item">
-                <input class="visually-hidden review-form__checkbox" id="Devil-bridge" type="checkbox" name="Devil-bridge" checked>
+                <input class="visually-hidden review-form__checkbox" id="Devil-bridge" type="checkbox"
+                  name="Devil-bridge" checked>
                 <label class="review-form__label" for="Devil-bridge">Мост Дьявола</label>
               </li>
               <li class="review-form__item">
-                <input class="visually-hidden review-form__checkbox" id="Mount-Bell" type="checkbox" name="Mount-Bell" checked>
+                <input class="visually-hidden review-form__checkbox" id="Mount-Bell" type="checkbox" name="Mount-Bell"
+                  checked>
                 <label class="review-form__label" for="Mount-Bell">Гора-Колокол</label>
               </li>
               <li class="review-form__item">
-                <input class="visually-hidden review-form__checkbox" id="Slide-park" type="checkbox" name="Slide-park" checked>
+                <input class="visually-hidden review-form__checkbox" id="Slide-park" type="checkbox" name="Slide-park"
+                  checked>
                 <label class="review-form__label" for="Slide-park">Слайд-парк</label>
               </li>
               <li class="review-form__item">
-                  <input class=" visually-hidden review-form__checkbox" id="Red-rocks" type="checkbox" name="Red-rocks">
-                  <label class="review-form__label" for="Red-rocks">Красные скалы</label>
+                <input class=" visually-hidden review-form__checkbox" id="Red-rocks" type="checkbox" name="Red-rocks">
+                <label class="review-form__label" for="Red-rocks">Красные скалы</label>
               </li>
             </ul>
           </fieldset>
@@ -166,9 +169,12 @@
         </ul>
       </div>
       <div class="copyright">
-        <p class="copyright-description">Разработано</p>
+        <p class="copyright__description">Разработано</p>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTMLACADEMY">
+          <svg width="27" height="35" fill="#000" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z" />
+          </svg>
         </a>
       </div>
     </div>
