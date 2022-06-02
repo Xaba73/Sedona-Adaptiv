@@ -1,3 +1,8 @@
+.hype {
+  margin-top: 39px;
+  margin-bottom: 34px;
+}
+
 .hype__title {
   font-size: 21px;
   font-weight: bold;
@@ -5,6 +10,6 @@
 
   @media (min-width:$tablet-width) {
     display: flex;
-    justify-content: center;
+    justify-content: start;
   }
 }
