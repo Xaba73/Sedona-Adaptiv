@@ -13,4 +13,23 @@
       top: 573px;
     }
   }
+
+  @media (min-width:$desktop-width) {
+    &::before {
+      top: 617px;
+    }
+  }
+}
+
+.impression__container {
+  margin-left: 20px;
+  margin-right: 20px;
+
+  @media (min-width:$tablet-width) {
+    margin-left: 60px;
+  }
+
+  @media (min-width:$desktop-width) {
+    margin-left: 120px;
+  }
 }

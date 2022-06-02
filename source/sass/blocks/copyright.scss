@@ -1,18 +1,14 @@
 .copyright {
   padding-top: 44px;
   margin-bottom: 27px;
-
-
+  justify-self: end;
 }
 
 .copyright__description {
   font-size: 14px;
   line-height: 26px;
   display: inline-block;
-
-  @media (min-width:$tablet-width) {
-    margin-left: 22.22%;
-  }
+  margin-left: auto;
 }
 
 .copyright__link {
@@ -21,10 +17,6 @@
 
   &:hover {
     fill: $blue;
-  }
-
-  @media (min-width:$tablet-width) {
-    margin-right: 24.69%;
   }
 }
 

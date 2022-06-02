@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html class="page page--form" lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -72,37 +72,41 @@
             <div class="review-form__container review-form__container--contacts">
               <legend class="review-form__title review-form__title--center review-form__title--decor">Контактная
                 информация:</legend>
-              <div class="contacts__field-group field">
-                <label class="field__label field__label--phone" for="phone-number"><span class="hide hide--desktop">
-                    Контактный</span> телефон*:</label>
-                <input class="field__input" id="phone-number" type="text" name="phone-number"
-                  placeholder="Введите телефон" required>
-              </div>
-              <div class="contacts__field-group field">
-                <label class="field__label field__label--email" for="email"> Электронная почта*:</label>
-                <input class="field__input" id="email" type="email" name="email" placeholder="Введите e-mail" required>
+              <div class="contacts__grid-container">
+                <div class="contacts__field-group field">
+                  <label class="field__label field__label--phone" for="phone-number"><span class="hide hide--desktop">
+                      Контактный</span> телефон*:</label>
+                  <input class="field__input field__input--contacts" id="phone-number" type="text" name="phone-number"
+                    placeholder="Введите телефон" required>
+                </div>
+                <div class="contacts__field-group field">
+                  <label class="field__label field__label--email" for="email"> Электронная почта*:</label>
+                  <input class="field__input field__input--email" id="email" type="email" name="email" placeholder="Введите e-mail" required>
+                </div>
               </div>
             </div>
           </fieldset>
           <fieldset class="review-form__fieldset impression">
-            <legend class="review-form__title review-form__title--switches">Ваше общее впечатление:</legend>
-            <ul class="review-form__list review-form__list--impression">
-              <li class="review-form__item">
-                <input class="visually-hidden review-form__radio" id="positive" type="radio" name="impression-group"
-                  value="positive" checked>
-                <label class="review-form__label" for="positive">Скорее положительное</label>
-              </li>
-              <li class="review-form__item">
-                <input class="visually-hidden review-form__radio" id="negative" type="radio" name="impression-group"
-                  value="negative">
-                <label class="review-form__label" for="negative">Скорее отрицательное</label>
-              </li>
-              <li class="review-form__item">
-                <input class="visually-hidden review-form__radio" type="radio" id="difficult" name="impression-group"
-                  value="difficult">
-                <label class="review-form__label" for="difficult">Затрудняюсь ответить</label>
-              </li>
-            </ul>
+            <div class="review-form__container review-form__container--impression">
+              <legend class="review-form__title review-form__title--imression">Ваше общее впечатление:</legend>
+              <ul class="review-form__list review-form__list--impression">
+                <li class="review-form__item">
+                  <input class="visually-hidden review-form__radio" id="positive" type="radio" name="impression-group"
+                    value="positive" checked>
+                  <label class="review-form__label" for="positive">Скорее положительное</label>
+                </li>
+                <li class="review-form__item">
+                  <input class="visually-hidden review-form__radio" id="negative" type="radio" name="impression-group"
+                    value="negative">
+                  <label class="review-form__label" for="negative">Скорее отрицательное</label>
+                </li>
+                <li class="review-form__item">
+                  <input class="visually-hidden review-form__radio" type="radio" id="difficult" name="impression-group"
+                    value="difficult">
+                  <label class="review-form__label" for="difficult">Затрудняюсь ответить</label>
+                </li>
+              </ul>
+            </div>
           </fieldset>
           <fieldset class="review-form__fieldset attraction">
             <div class="review-form__container">
@@ -141,12 +145,11 @@
                 class="review-form__title review-form__title--center review-form__title--decor review-form__title--feels"
                 for="description-feedback">Опишите свои эмоции:
               </label>
+              <p class="feels__field-wrapper">
+                <textarea class="feels__field" id="description-feedback" rows="5" cols="25"
+                  placeholder="Опишите подробно все свои восторги" name="feels-rewiev"></textarea>
+              </p>
             </div>
-            <p class="feels__field-wrapper">
-              <textarea class="feels__field" id="description-feedback" rows="5" cols="25"
-                placeholder="Опишите подробно все свои восторги" name="feels-rewiev"></textarea>
-            </p>
-
           </div>
           <div class="review-form__button-wrapper">
             <button class="review-form__button button" type="submit">Отправить отзыв</button>

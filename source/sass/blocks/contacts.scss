@@ -2,7 +2,23 @@
   grid-column: 1/-1;
   grid-row: 2/3;
 }
-.contacts__field-group{
-  position: relative;
+
+.contacts__grid-container {
+  @media (min-width:$desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
+.contacts__field-group {
+  position: relative;
+
+  @media (min-width:$desktop-width) {
+    display: flex;
+    align-items: baseline;
+
+    &:nth-child(2n-1) {
+      margin-right: 80px;
+    }
+  }
+}
