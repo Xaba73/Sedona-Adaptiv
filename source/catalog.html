@@ -3,26 +3,24 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sedona</title>
   <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
 <body class="page__body">
   <header class="page-header">
-    <a class="page-header__logo" href="index.html">
-      <img src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип Sedona">
-    </a>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="index.html">Главная</a>
-          </li>
           <li class="main-nav__item main-nav__item--active">
-            <a class="main-nav__link">Фото и видео</a>
+            <a class="main-nav__link">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">Фото и видео</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="Form.html">Форма Отзыва</a>
@@ -32,19 +30,18 @@
           </li>
         </ul>
       </div>
-      <button class="main-nav__button-close">
-        <span class="visually-hidden">Закрыть меню</span>
-        <img src="img/nav-cross.svg" width="23" height="23" alt="Иконка закрытия меню">
-      </button>
     </nav>
+    <a class="page-header__logo" href="index.html">
+      <img src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип Sedona">
+    </a>
   </header>
   <main class="page-main">
-    <div class="logo">
-      <img src="img/form-logo.svg" alt="Логотип седона" width="229" height="39">
+    <div class="logo-form">
+      <img src="img/form-logo.svg" class="logo-form__image" alt="Логотип седона" width="229" height="39">
     </div>
     <section class="page-promo">
-      <div class="page-promo__wrapper">
-        <h1 class="page-promo__title">Фото и видео</h1>
+      <div class="page-promo__wrapper page-promo__wrapper--form page-promo__wrapper--catalog">
+        <h1 class="page-promo__title page-promo__title--form">Фото и видео</h1>
         <p class="page-promo__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть
           о политике и экономике.</p>
       </div>
@@ -53,66 +50,95 @@
       <h2 class="visually-hidden">Галерея фотографий</h2>
       <ul class="gallery__list">
         <li class="gallery__item">
-          <figure class="gallery__content">
+          <div class="gallery__content">
             <img class="gallery__photo" src="img/catalog-photo-1.jpg" alt="Фото заката" width="280" height="280">
-            <h3 class="gallery__title">Неродные просторы</h3>
-            <figcaption class="gallery__author">Автор фото: Борис</figcaption>
-          </figure>
-          <button class="gallery__like-counter" type="button">1350</button>
+            <div class="gallery__flex-wrapper">
+              <div class="gallery__description">
+                <h3 class="gallery__title">Неродные просторы</h3>
+                <p class="gallery__author">Автор фото: Борис</p>
+              </div>
+              <button class="gallery__like-counter" type="button">1350</button>
+            </div>
+          </div>
         </li>
         <li class="gallery__item">
-          <figure class="gallery__content">
+          <div class="gallery__content">
             <img class="gallery__photo" src="img/catalog-photo-2.jpg" alt="Фото местной фауны" width="280" height="280">
-            <h3 class="gallery__title">Местная растительность</h3>
-            <figcaption class="gallery__author">Автор фото: Сергей</figcaption>
-          </figure>
-          <button class="gallery__like-counter" type="button">143</button>
+            <div class="gallery__flex-wrapper">
+              <div class="gallery__description">
+                <h3 class="gallery__title">Местная растительность</h3>
+                <p class="gallery__author">Автор фото: Сергей</p>
+              </div>
+              <button class="gallery__like-counter" type="button">143</button>
+            </div>
+          </div>
         </li>
         <li class="gallery__item">
-          <figure class="gallery__content">
+          <div class="gallery__content">
             <img class="gallery__photo" src="img/catalog-photo-3.jpg" alt="Живописная дорога" width="280" height="280">
-            <h3 class="gallery__title">Дорога на север</h3>
-            <figcaption class="gallery__author">Автор фото: Петр</figcaption>
-          </figure>
-          <button class="gallery__like-counter" type="button">96</button>
+            <div class="gallery__flex-wrapper">
+              <div class="gallery__description">
+                <h3 class="gallery__title">Дорога на север</h3>
+                <p class="gallery__author">Автор фото: Петр</p>
+              </div>
+              <button class="gallery__like-counter" type="button">96</button>
+            </div>
+          </div>
         </li>
         <li class="gallery__item">
-          <figure class="gallery__content">
+          <div class="gallery__content">
             <img class="gallery__photo" src="img/catalog-photo-4.jpg" alt="Фото моста дьявола" width="280" height="280">
-            <h3 class="gallery__title">Мост дьявола</h3>
-            <figcaption class="gallery__author">Автор фото: Антон</figcaption>
-          </figure>
-          <button class="gallery__like-counter" type="button">254</button>
+            <div class="gallery__flex-wrapper">
+              <div class="gallery__description">
+                <h3 class="gallery__title">Мост дьявола</h3>
+                <p class="gallery__author">Автор фото: Антон</p>
+              </div>
+              <button class="gallery__like-counter" type="button">254</button>
+            </div>
+          </div>
         </li>
       </ul>
       <section class="page-promo">
-        <div class="page-promo__wrapper">
-          <h2 class="page-promo__title">Все еще сомневаетесь?</h2>
+        <div class="page-promo__wrapper page-promo__wrapper--footer page-promo__wrapper--catalog-footer">
+          <h2 class="page-promo__title page-promo__title--form">Все еще сомневаетесь?</h2>
           <p class="page-promo__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
             очередной раз!</p>
         </div>
       </section>
       <section class="video-content">
         <h2 class="visually-hidden">Видеоролик о городе</h2>
-        <video class="video-content__media" width="320" height="201">
-          <source src="#">
-        </video>
+        <div class="video-content__media-wrapper">
+          <video class="video-content__media" width="320" height="201">
+            <source src="#">
+          </video>
+        </div>
         <div class="video-navigation">
-          <p class="video-navigation__wrapper">
-            <input class="video-navigation__range-bar" type="range" name="range-bar" min="1" max="20">
-          </p>
-          <div class="video-navigation__button-wrapper">
+          <div class="video-navigation__scale-bar">
+            <span class="video-navigation__handle"></span>
+          </div>
+          <div class="video-navigation__button-wrapper video-navigation__button-wrapper--replay">
             <button class="video-navigation__button video-navigation__button--replay" type="button">
+              <svg width="16" height="20" fill="#5C6870" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M8 4V0L3 5l5 5V6c3.3 0 6 2.7 6 6s-2.7 6-6 6-6-2.7-6-6H0c0 4.4 3.6 8 8 8s8-3.6 8-8-3.6-8-8-8Z" />
+              </svg>
               <span class="visually-hidden">Кнопа повтора видео</span>
             </button>
           </div>
-          <div class="video-navigation__button-wrapper">
+          <div class="video-navigation__button-wrapper video-navigation__button-wrapper--subtitles">
             <button class="video-navigation__button video-navigation__button--subtitles" type="button">
+              <svg width="32" height="20" fill="#5C6870" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M29 0H3C1.3 0 0 1.3 0 3v14c0 1.7 1.3 3 3 3h26c1.7 0 3-1.3 3-3V3c0-1.7-1.3-3-3-3ZM14.4 15.9c-.5.1-1.1.1-1.7.1-.7 0-1.4-.1-2-.3-.6-.2-1.2-.6-1.6-1-.4-.4-.8-1.1-1.1-1.9-.3-.8-.4-1.7-.4-2.8 0-1.1.2-2.1.5-2.9.3-.8.7-1.4 1.2-1.9s1.1-.8 1.7-1c.5-.1 1.2-.2 1.8-.2.7 0 1.2 0 1.7.1s.8.2 1.1.3l-.4 1.9-.9-.3H13c-.9 0-1.6.3-2.2 1-.6.7-.8 1.7-.8 3 0 .6.1 1.1.2 1.6s.3.9.6 1.3c.3.3.6.6 1 .8.4.2.9.3 1.4.3.5 0 .9 0 1.3-.1.3-.1.6-.2.9-.4l.5 1.8c-.5.3-1 .4-1.5.6Zm8.7 0c-.5.1-1.1.1-1.7.1-.7 0-1.4-.1-2-.3-.6-.2-1.2-.6-1.6-1-.5-.5-.9-1.1-1.1-1.9-.3-.8-.4-1.7-.4-2.8 0-1.1.2-2.1.5-2.9.3-.8.7-1.4 1.2-1.9s1.1-.8 1.7-1c.5-.1 1.2-.2 1.8-.2.7 0 1.2 0 1.7.1s.8.2 1.1.3l-.4 1.9L23 6h-1.3c-.9 0-1.6.3-2.2 1-.6.7-.8 1.7-.8 3 0 .6.1 1.1.2 1.6s.3.9.6 1.3c.3.3.6.6 1 .8.4.2.9.3 1.4.3.5 0 .9 0 1.3-.1.3-.1.6-.2.9-.4l.5 1.8c-.5.3-1 .4-1.5.6Z" />
+              </svg>
               <span class="visually-hidden">Кнопа включения субтитров</span>
             </button>
           </div>
-          <div class="video-navigation__button-wrapper">
+          <div class="video-navigation__button-wrapper video-navigation__button-wrapper--full-screen">
             <button class="video-navigation__button video-navigation__button--full-screen" type="button">
+              <svg width="20" height="20" fill="#5C6870" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0v6h3V3h3V0H0ZM3 14H0v6h6v-3H3v-3ZM17 0h-3v3h3v3h3V0h-3ZM17 17h-3v3h6v-6h-3v3Z" />
+              </svg>
               <span class="visually-hidden">Кнопа переключения полноэкранного режима</span>
             </button>
           </div>
@@ -145,13 +171,17 @@
         </ul>
       </div>
       <div class="copyright">
-        <p class="copyright-description">Разработано</p>
+        <p class="copyright__description">Разработано</p>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTMLACADEMY">
+          <svg width="27" height="35" fill="#000" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z" />
+          </svg>
         </a>
       </div>
     </div>
   </footer>
+  <script src="js/main-nav__toggle.js"></script>
 </body>
 
 </html>
