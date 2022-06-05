@@ -1,3 +1,13 @@
+.gallery__content {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width:$tablet-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 .gallery__list {
   list-style: none;
   margin: 0;
@@ -6,10 +16,25 @@
   @media (min-width:$tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    margin-left: 60px;
+    margin-right: 60px;
   }
 
   @media (min-width:$desktop-width) {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.gallery__item {
+  margin-top: 23px;
+
+  @media (max-width:$mobile-only-width) {
+    border-bottom: 1px solid $grey-disabled;
+  }
+
+  @media (min-width:$tablet-width) {
+    margin: 0;
+    background-color: $grey-background;
   }
 }
 
@@ -19,16 +44,61 @@
   }
 }
 
+.gallery__item:nth-child(2n+3) {
+  @media (min-width:$tablet-width) {
+    background-color: $grey-catalog;
+  }
+}
+
+.gallery__photo {
+  margin-bottom: 11px;
+  display: block;
+
+  @media (min-width:$tablet-width) {
+    margin-bottom: 0;
+    height: 400px;
+    width: 100%;
+  }
+}
+
+.gallery__flex-wrapper {
+  @media (min-width:$tablet-width) {
+    display: flex;
+  }
+}
+
+.gallery__description {
+  @media (min-width:$tablet-width) {
+    margin-right: auto;
+    padding-top: 17px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+  }
+}
+
 .gallery__title {
   font-weight: bold;
   font-size: 14px;
   line-height: 24px;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 11px;
+
+  @media (min-width:$tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .gallery__author {
   font-size: 14px;
   line-height: 24px;
   text-transform: none;
+  margin-bottom: 13px;
+  margin-top: 0;
+
+  @media (min-width:$tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .gallery__like-counter {
@@ -37,4 +107,34 @@
   font-weight: bold;
   border: none;
   background-color: $white;
+  padding: 0;
+  padding-left: 37px;
+  margin-bottom: 15px;
+  position: relative;
+  background-color: inherit;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 23px;
+    height: 21px;
+    left: 0;
+    background-image: url("../../img/catalog-like-icon.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width:$tablet-width) {
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+}
+
+.gallery__flex-wrapper button:first-child {
+  background-color: red;
+}
+
+.video-navigation__range-bar {
+  padding: 22px;
+  background-color: $black;
 }

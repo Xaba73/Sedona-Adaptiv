@@ -1,19 +1,124 @@
-.video-navigation__button {
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 32px;
-  height: 20px;
-  border: none;
+.video-content__media-wrapper {
+  @media (min-width:$tablet-width) {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
 
+.video-content__media {
+  background-image: url("../../img/catalog-video-background-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+
+  @media (min-width:$tablet-width) {
+    background-image: url("../../img/catalog-video-background-desktop.jpg");
+    height: 500px;
+  }
+}
+
+.video-navigation {
+  margin-top: -49px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: $grey-background;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 45px 66px;
+  align-items: center;
+
+  @media (min-width:$tablet-width) {
+    grid-template-columns: 92px auto 83px 81px;
+    grid-template-rows: 93px;
+    margin-top: -98px;
+    margin-right: 60px;
+    margin-left: 60px;
+    background-color: rgba($black, 0.6);
+    position: relative;
+  }
+}
+
+.video-navigation__scale-bar {
+  grid-column: 1/-1;
+  grid-row: 1/2;
+  padding: 0;
+  height: 45px;
+  background-color: rgba($black, 0.6);
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    min-width: 83%;
+    height: 3px;
+    background-color: $white;
+    opacity: 0.2;
+    top: 50%;
+    right: 23px;
+  }
+
+  @media (min-width:$tablet-width) {
+    grid-column: 2/3;
+    background-color: transparent;
+  }
+}
+
+.video-navigation__handle {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  background-color: $white;
+  z-index: 2;
+  border-radius: 50%;
+  opacity: 1;
+  top: calc(50% - 5px);
+  left: 25%;
+}
+
+.video-navigation__button-wrapper {
   &--replay {
-    background-image: url(../../img/replay-button.svg);
+    justify-self: center;
   }
 
   &--subtitles {
-    background-image: url(../../img/subtitles-button.svg);
+    grid-column: 3/4;
+    margin-right: 10px;
+    justify-self: end;
   }
 
   &--full-screen {
-    background-image: url(../../img/fullscreen-button.svg);
+    justify-self: center;
+  }
+}
+
+.video-navigation__button {
+  width: 32px;
+  height: 20px;
+  border: none;
+  background-color: transparent;
+}
+
+.video-navigation__button svg {
+  &:hover {
+    fill: $black-100;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width:$tablet-width) {
+    fill: $white;
+
+    &:hover {
+      opacity: 0.6;
+      fill: $white;
+    }
+
+    &:active {
+      opacity: 0.3;
+      fill: $white;
+    }
   }
 }
