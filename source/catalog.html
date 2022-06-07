@@ -17,7 +17,7 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link">Главная</a>
+            <a class="main-nav__link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item main-nav__item--active">
             <a class="main-nav__link" href="catalog.html">Фото и видео</a>
@@ -32,7 +32,11 @@
       </div>
     </nav>
     <a class="page-header__logo" href="index.html">
-      <img src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип Sedona">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+        <img src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип Sedona">
+      </picture>
     </a>
   </header>
   <main class="page-main">
