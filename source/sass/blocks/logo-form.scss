@@ -12,8 +12,8 @@
     background-image: url("../../img/intro-triangle.svg"), url("../../img/form-mobile-background@2x.jpg");
   }
 
-  @media (min-width:$tablet-width) {
-    background-image: url("../../img/intro-triangle.svg"), url('../../img/background-main.jpg');
+  @media (min-width: $tablet-width) {
+    background-image: url("../../img/intro-triangle.svg"), url("../../img/background-main.jpg");
     height: 290px;
     margin-top: 0;
 
@@ -22,7 +22,7 @@
     }
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     height: 301px;
   }
 }
@@ -33,7 +33,7 @@
   margin-left: auto;
   padding-top: 52px;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     width: 456px;
     height: 77px;
     padding-top: 95px;

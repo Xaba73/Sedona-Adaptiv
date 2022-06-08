@@ -3,7 +3,7 @@
   background-color: $white;
 
   &--form {
-    border-bottom: 1px solid $grey-disabled ;
+    border-bottom: 1px solid $grey-disabled;
     padding-bottom: 16px;
   }
 
@@ -15,7 +15,7 @@
     padding: 32px 23px 33px 23px;
   }
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     padding: 43.5px 124px 52.5px 124px;
 
     &--form {
@@ -32,7 +32,7 @@
     }
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     padding: 55px 358px 41px 358px;
 
     &--form {
@@ -57,14 +57,13 @@
   margin-top: 0;
   margin-bottom: 37px;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: 21px;
 
     &--form {
       font-size: 30px;
     }
   }
-
 }
 
 .page-promo__description {
@@ -74,7 +73,7 @@
   text-align: center;
   margin-bottom: 0;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     margin-bottom: 0;
   }
 }
