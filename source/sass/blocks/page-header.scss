@@ -8,12 +8,12 @@
   align-self: center;
   position: relative;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     position: absolute;
   }
 }
 
-@media (min-width:$desktop-width) {
+@media (min-width: $desktop-width) {
   .page-header__logo img {
     width: 187px;
     height: 97px;

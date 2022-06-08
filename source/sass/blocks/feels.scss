@@ -6,7 +6,7 @@
 .feels__field-wrapper {
   display: flex;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     margin-bottom: 58px;
   }
 }
@@ -17,7 +17,6 @@
   line-height: 26px;
   font-weight: bold;
   overflow: auto;
-  border: none;
   resize: none;
   background-color: $grey-field;
   padding: 13px 23px 9px 21px;

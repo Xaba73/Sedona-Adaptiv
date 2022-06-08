@@ -8,7 +8,7 @@
   padding: 0;
 }
 
-@media (min-width:$tablet-width) {
+@media (min-width: $tablet-width) {
   .features__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -22,7 +22,7 @@
   &:first-child {
     padding-top: 35px;
 
-    @media (min-width:$tablet-width) {
+    @media (min-width: $tablet-width) {
       padding: 158px 35px 60px 36px;
     }
   }
@@ -36,19 +36,18 @@
     background-repeat: no-repeat;
     background-position: center center;
 
-    @media (min-width:$tablet-width) {
+    @media (min-width: $tablet-width) {
       width: 76px;
       height: 75px;
       left: calc(50% - 36px);
     }
-
   }
 
   &--house::before {
-    background-image: url(../../img/icon-house.svg);
+    background-image: url("../../img/icon-house.svg");
     top: 26px;
 
-    @media (min-width:$tablet-width) {
+    @media (min-width: $tablet-width) {
       background-size: 75px 72px;
       top: 60px;
     }
@@ -59,10 +58,10 @@
   }
 
   &--souvenir::before {
-    background-image: url(../../img/icon-souvenir.svg);
+    background-image: url("../../img/icon-souvenir.svg");
     top: -13px;
 
-    @media (min-width:$tablet-width) {
+    @media (min-width: $tablet-width) {
       background-size: 64px 75px;
       top: 60px;
     }
@@ -74,21 +73,19 @@
   }
 
   &--food::before {
-    background-image: url(../../img/icon-food.svg);
+    background-image: url("../../img/icon-food.svg");
     top: -7px;
 
-    @media (min-width:$tablet-width) {
+    @media (min-width: $tablet-width) {
       background-size: 76px 68px;
       top: 60px;
     }
   }
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     padding: 158px 35px 60px 36px;
   }
 }
-
-
 
 .features__title {
   font-weight: bold;
@@ -97,12 +94,11 @@
   color: $black;
   margin: 0;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: 21px;
     text-align: center;
     margin-bottom: 30px;
   }
-
 }
 
 .features__description {
@@ -110,12 +106,12 @@
   line-height: 21px;
   color: $black-100;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     text-align: center;
     margin-bottom: 0;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     margin-left: 25px;
     margin-right: 25px;
   }

@@ -55,7 +55,14 @@
       <ul class="gallery__list">
         <li class="gallery__item">
           <div class="gallery__content">
-            <img class="gallery__photo" src="img/catalog-photo-1.jpg" alt="Фото заката" width="280" height="280">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/catalog-photo-desktop-1.jpg 1x, img/catalog-photo-desktop-1@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/catalog-photo-tablet-1.jpg 1x, img/catalog-photo-tablet-1@2x.jpg 2x">
+              <img class="gallery__photo gallery__photo--first" src="img/catalog-photo-1.jpg"
+                srcset="img/catalog-photo-1@2x.jpg 2x" alt="Фото заката" width="280" height="280">
+            </picture>
             <div class="gallery__flex-wrapper">
               <div class="gallery__description">
                 <h3 class="gallery__title">Неродные просторы</h3>
@@ -67,7 +74,14 @@
         </li>
         <li class="gallery__item">
           <div class="gallery__content">
-            <img class="gallery__photo" src="img/catalog-photo-2.jpg" alt="Фото местной фауны" width="280" height="280">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/catalog-photo-desktop-2.jpg 1x, img/catalog-photo-desktop-2@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/catalog-photo-tablet-2.jpg 1x, img/catalog-photo-tablet-2@2x.jpg 2x">
+              <img class="gallery__photo" src="img/catalog-photo-2.jpg" srcset="img/catalog-photo-2@2x.jpg 2x"
+                alt="Фото местной фауны" width="280" height="280">
+            </picture>
             <div class="gallery__flex-wrapper">
               <div class="gallery__description">
                 <h3 class="gallery__title">Местная растительность</h3>
@@ -79,7 +93,14 @@
         </li>
         <li class="gallery__item">
           <div class="gallery__content">
-            <img class="gallery__photo" src="img/catalog-photo-3.jpg" alt="Живописная дорога" width="280" height="280">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/catalog-photo-desktop-3.jpg 1x, img/catalog-photo-desktop-3@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/catalog-photo-tablet-3.jpg 1x, img/catalog-photo-tablet-3@2x.jpg 2x">
+              <img class="gallery__photo" src="img/catalog-photo-3.jpg" srcset="img/catalog-photo-3@2x.jpg 2x"
+                alt="Живописная дорога" width="280" height="280">
+            </picture>
             <div class="gallery__flex-wrapper">
               <div class="gallery__description">
                 <h3 class="gallery__title">Дорога на север</h3>
@@ -91,7 +112,14 @@
         </li>
         <li class="gallery__item">
           <div class="gallery__content">
-            <img class="gallery__photo" src="img/catalog-photo-4.jpg" alt="Фото моста дьявола" width="280" height="280">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/catalog-photo-desktop-4.jpg 1x, img/catalog-photo-desktop-4@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/catalog-photo-tablet-4.jpg 1x, img/catalog-photo-tablet-4@2x.jpg 2x">
+              <img class="gallery__photo" src="img/catalog-photo-4.jpg" srcset="img/catalog-photo-4@2x.jpg 2x"
+                alt="Фото моста дьявола" width="280" height="280">
+            </picture>
             <div class="gallery__flex-wrapper">
               <div class="gallery__description">
                 <h3 class="gallery__title">Мост дьявола</h3>

@@ -4,7 +4,7 @@
 }
 
 .contacts__grid-container {
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
@@ -13,7 +13,7 @@
 .contacts__field-group {
   position: relative;
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     display: flex;
     align-items: baseline;
 

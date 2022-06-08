@@ -3,11 +3,11 @@
   padding-bottom: 27px;
   background-color: $white;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     padding: 58px 166px 36px 167px;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     padding: 58px 375px 42px 375px;
   }
 }

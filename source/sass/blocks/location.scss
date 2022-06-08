@@ -1,0 +1,16 @@
+.location__frame {
+  width: 100%;
+}
+
+.location__wrapper {
+  background-color: $white;
+  padding-top: 49px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 66px;
+  }
+}

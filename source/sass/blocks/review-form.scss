@@ -1,5 +1,5 @@
 .review-form__grid-cotainer {
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr auto auto auto auto;
@@ -11,10 +11,9 @@
   padding: 0;
   margin: 0;
 
-  @media (max-width:$mobile-only-width) {
+  @media (max-width: $mobile-only-width) {
     border-bottom: 1px solid $grey-disabled;
   }
-
 }
 
 .review-form__container {
@@ -22,7 +21,7 @@
   margin-left: 20px;
   position: relative;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     margin-right: 60px;
     margin-left: 60px;
 
@@ -32,12 +31,12 @@
   }
 
   &--contacts {
-    @media (min-width:$tablet-width) {
+    @media (min-width: $tablet-width) {
       margin-bottom: 31.5px;
     }
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     margin-right: 120px;
     margin-left: 120px;
 
@@ -60,7 +59,7 @@
     margin-bottom: 37px;
   }
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     padding-top: 0;
     margin-bottom: 72px;
     text-align: start;
@@ -83,20 +82,20 @@
     }
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     &--imression {
       margin-left: 80px;
     }
   }
 }
 
-@media (min-width:$tablet-width) {
+@media (min-width: $tablet-width) {
   .review-form__list li:last-child {
     margin-bottom: 84px;
   }
 }
 
-@media (min-width:$tablet-width) {
+@media (min-width: $tablet-width) {
   .review-form__title--decor::before {
     content: "";
     position: absolute;
@@ -123,15 +122,14 @@
   margin: 0;
   padding: 0;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     &--attraction {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-
     }
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     &--attraction {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -147,7 +145,7 @@
   display: block;
   cursor: pointer;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     padding-left: 75px;
   }
 }
@@ -160,13 +158,13 @@
   font-size: 18px;
   line-height: 26px;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     margin-bottom: 52px;
   }
 }
 
-.review-form__radio+label::before,
-.review-form__checkbox+label::before {
+.review-form__radio + label::before,
+.review-form__checkbox + label::before {
   content: "";
   position: absolute;
   width: 48px;
@@ -174,24 +172,24 @@
   background-color: $grey-field;
   cursor: pointer;
   top: -15px;
-  left: 0px;
+  left: 0;
 }
 
-.review-form__radio+label::before {
+.review-form__radio + label::before {
   border-radius: 50%;
 }
 
-.review-form__radio+label:hover::before,
-.review-form__checkbox+label:hover:before {
+.review-form__radio + label:hover::before,
+.review-form__checkbox + label:hover::before {
   background-color: $grey-disabled;
 }
 
-.review-form__radio+label:active::before,
-.review-form__checkbox+label:active:before {
+.review-form__radio + label:active::before,
+.review-form__checkbox + label:active::before {
   background-color: $grey-decor-active;
 }
 
-.review-form__radio:checked+label::after {
+.review-form__radio:checked + label::after {
   content: "";
   position: absolute;
   width: 18px;
@@ -199,29 +197,28 @@
   background-color: $black-100;
   border-radius: 50%;
   cursor: pointer;
-  top: 0px;
+  top: 0;
   left: 15px;
-
 }
 
-.review-form__radio:checked+label:active:after {
+.review-form__radio:checked + label:active::after {
   opacity: 0.3;
 }
 
-.review-form__checkbox:checked+label::after {
+.review-form__checkbox:checked + label::after {
   content: "";
   position: absolute;
   width: 46px;
   height: 46px;
-  background-image: url(../../img/form-checked.svg);
+  background-image: url("../../img/form-checked.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   cursor: pointer;
-  top: 0px;
+  top: 0;
   left: 15px;
 }
 
-.review-form__checkbox:checked+label:active:after {
+.review-form__checkbox:checked + label:active::after {
   opacity: 0.3;
 }
 
@@ -230,12 +227,12 @@
   margin-left: 20px;
   display: flex;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     margin-right: 0;
     margin-left: 60px;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     margin-left: 120px;
   }
 }
@@ -247,19 +244,19 @@
   margin-right: auto;
   margin-left: auto;
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     margin-left: 0;
     margin-right: 0;
     max-width: 480px;
   }
-
 }
 
 .review-form__require {
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     margin-right: 60px;
   }
-  @media (min-width:$desktop-width) {
+
+  @media (min-width: $desktop-width) {
     margin-right: 120px;
   }
 }
@@ -269,9 +266,8 @@
   line-height: 26px;
   display: none;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     display: block;
     text-align: end;
   }
-
 }
