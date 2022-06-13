@@ -138,6 +138,8 @@
 }
 
 .video-navigation__button svg {
+  fill: $grey-video-button;
+
   &:hover {
     fill: $black-100;
   }

@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sedona</title>
+  <link rel="stylesheet" href="css/style.min.css" type="text/css">
   <link rel="stylesheet" href="css/style.css" type="text/css">
   <link rel="icon" type="image/png" sizes="32x32" href="../fav32.ico">
   <link rel="icon" href="../favsvg32.svg" type="image/svg+xml">
@@ -67,6 +68,11 @@
                   class="hide hide--tablet"> течет своя жизнь</p>
             </div>
             <picture class="main-advantages__photo">
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/main-photo-city-desktop.webp 1x, img/main-photo-city-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/main-photo-city-tablet.webp 1x, img/main-photo-city-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/main-photo-city.webp 1x, img/main-photo-city@2x.webp 2x">
               <source media="(min-width: 1200px)"
                 srcset="img/main-photo-city-desktop.jpg 1x, img/main-photo-city-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)"
@@ -103,6 +109,11 @@
                 Если вы осмелитесь, конечно</p>
             </div>
             <picture class="main-advantages__photo main-advantages__photo--reverse">
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/main-photo-bridge-desktop.webp 1x, img/main-photo-bridge-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/main-photo-bridge-tablet.webp 1x, img/main-photo-bridge-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/main-photo-bridge.webp 1x, img/main-photo-bridge@2x.webp 2x">
               <source media="(min-width: 1200px)"
                 srcset="img/main-photo-bridge-desktop.jpg 1x, img/main-photo-bridge-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)"
@@ -185,15 +196,15 @@
         <div class="copyright">
           <p class="copyright__description">Разработано</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg width="27" height="35" fill="#000" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z" />
+            <svg width="27" height="35">
+              <use xlink:href="img/sprite.svg#htmlacademy-logo-footer"></use>
             </svg>
           </a>
         </div>
       </div>
     </footer>
   </div>
+  <script src="js/main-nav__toggle.min.js"></script>
   <script src="js/main-nav__toggle.js"></script>
 
 </body>
