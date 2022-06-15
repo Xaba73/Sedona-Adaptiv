@@ -1,5 +1,5 @@
 .logo-form {
-  background-image: url("../../img/intro-triangle.svg"), url("../../img/form-mobile-background.jpg");
+  background-image: url("../img/intro-triangle.svg"), url("../img/form-mobile-background.jpg");
   min-width: 320px;
   height: 158px;
   background-repeat: no-repeat;
@@ -9,16 +9,16 @@
   margin-top: -28px;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/intro-triangle.svg"), url("../../img/form-mobile-background@2x.jpg");
+    background-image: url("../img/intro-triangle.svg"), url("../img/form-mobile-background@2x.jpg");
   }
 
   @media (min-width: $tablet-width) {
-    background-image: url("../../img/intro-triangle.svg"), url("../../img/background-main.jpg");
+    background-image: url("../img/intro-triangle.svg"), url("../img/background-main.jpg");
     height: 290px;
     margin-top: 0;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/intro-triangle.svg"), url("../../img/background-main@2x.jpg");
+      background-image: url("../img/intro-triangle.svg"), url("../img/background-main@2x.jpg");
     }
   }
 
