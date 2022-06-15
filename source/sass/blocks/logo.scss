@@ -1,5 +1,5 @@
 .logo {
-  background-image: url("../../img/intro-triangle.svg"), url("../../img/background-mobile.jpg");
+  background-image: url("../img/intro-triangle.svg"), url("../img/background-mobile.jpg");
   background-repeat: no-repeat;
   background-position-x: 50%;
   background-position-y: 100%;
@@ -9,16 +9,16 @@
   margin-top: -28px;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/intro-triangle.svg"), url("../../img/background-mobile@2x.jpg");
+    background-image: url("../img/intro-triangle.svg"), url("../img/background-mobile@2x.jpg");
   }
 
   @media (min-width: $tablet-width) {
     height: 518px;
     margin-top: 0;
-    background-image: url("../../img/intro-triangle.svg"), url("../../img/background-main.jpg");
+    background-image: url("../img/intro-triangle.svg"), url("../img/background-main.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/intro-triangle.svg"), url("../../img/background-main@2x.jpg");
+      background-image: url("../img/intro-triangle.svg"), url("../img/background-main@2x.jpg");
     }
   }
 }
