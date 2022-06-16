@@ -66,6 +66,8 @@
   font-size: 14px;
   line-height: 21px;
   text-align: center;
+  margin-right: 8px;
+  margin-left: 8px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -73,6 +75,7 @@
 
   @media (min-width: $desktop-width) {
     margin-right: 8px;
+    margin-left: 0;
 
     &--reverse {
       margin-right: 35px;
