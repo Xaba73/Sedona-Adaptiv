@@ -401,6 +401,8 @@ body {
   font-size: 14px;
   line-height: 21px;
   text-align: center;
+  margin-right: 8px;
+  margin-left: 8px;
 }
 @media (min-width: 768px) {
   .main-advantages__description {
@@ -410,6 +412,7 @@ body {
 @media (min-width: 1200px) {
   .main-advantages__description {
     margin-right: 8px;
+    margin-left: 0;
   }
   .main-advantages__description--reverse {
     margin-right: 35px;
@@ -1279,10 +1282,10 @@ body {
   border: 4px solid #f2f2f2;
 }
 .field__input::-moz-placeholder {
-  color: #000000;
+  color: rgba(0, 0, 0, 0.4);
 }
 .field__input::placeholder {
-  color: #000000;
+  color: rgba(0, 0, 0, 0.4);
 }
 .field__input:hover {
   background-color: #e5e5e5;
@@ -1379,10 +1382,10 @@ body {
   border: 4px solid #f2f2f2;
 }
 .feels__field::-moz-placeholder {
-  color: #000000;
+  color: rgba(0, 0, 0, 0.4);
 }
 .feels__field::placeholder {
-  color: #000000;
+  color: rgba(0, 0, 0, 0.4);
 }
 .feels__field:hover {
   background-color: #e5e5e5;
