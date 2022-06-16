@@ -25,7 +25,7 @@
   border: 4px solid $grey-field;
 
   &::placeholder {
-    color: $black;
+    color: rgba($black, 0.4);
   }
 
   &:hover {
